@@ -1,0 +1,61 @@
+// Break-points
+
+@screenTablet: 				~"(min-width: 768px)";
+@screenDesktop: 			~"(min-width: 992px)";
+@screenDesktopHD:  	  ~"(min-width: 1200px)";
+
+/*
+
+	Generatore di padding, margin
+
+*/
+.margin-0{margin: 0;}
+.padding-0{padding: 0;}
+
+.generaSpazi(@selector, @numero_elementi, @increase_factor, @mq){
+
+		.loop (@j) when (@j >= 0) {
+
+		  @numero_elementi: @j * @increase_factor;
+		  @increase_ammount_value: @j * (@increase_factor * 1px);
+
+		  .@{mq}-@{selector}-top-@{numero_elementi}{ @{selector}-top: @increase_ammount_value; }
+		  .@{mq}-@{selector}-right-@{numero_elementi}{ @{selector}-right: @increase_ammount_value; }
+		  .@{mq}-@{selector}-bottom-@{numero_elementi}{ @{selector}-bottom: @increase_ammount_value; }
+		  .@{mq}-@{selector}-left-@{numero_elementi}{ @{selector}-left: @increase_ammount_value; }
+
+		  .loop(@j - 1);
+		}
+
+
+	.@{mq}-@{selector}-0{
+		@{selector}: 0;
+	}
+
+	.loop (0) {}
+	.loop(@numero_elementi);
+}
+
+// Mobile
+.generaSpazi(margin, 20, 5, mb);
+.generaSpazi(padding, 20, 5, mb);
+
+// Tablet
+@media @screenTablet {
+	.generaSpazi(margin, 20, 5, tb);
+	.generaSpazi(padding, 20, 5, tb);
+}
+
+// Desktop
+@media @screenDesktop {
+	.generaSpazi(margin, 20, 5, dt);
+	.generaSpazi(padding, 20, 5, dt);
+}
+
+// DesktopHD
+@media @screenDesktopHD {
+	.generaSpazi(margin, 20, 5, hd);
+	.generaSpazi(padding, 20, 5, hd);
+}
+
+
