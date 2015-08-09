@@ -2071,7 +2071,7 @@
 .show-hd {
   display: none !important;
 }
-@media (max-width: (min-width: 768px)) {
+@media (max-width: 768px) {
   .show-mb {
     display: block !important;
   }
@@ -2086,7 +2086,7 @@
     display: table-cell !important;
   }
 }
-@media (min-width: (min-width: 768px)) and (max-width: (min-width: 992px)) {
+@media (min-width: 768px) and (max-width: 992px) {
   .show-tb {
     display: block !important;
   }
@@ -2101,7 +2101,7 @@
     display: table-cell !important;
   }
 }
-@media (min-width: (min-width: 992px)) and (max-width: (min-width: 1200px)) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .show-dt {
     display: block !important;
   }
@@ -2116,7 +2116,7 @@
     display: table-cell !important;
   }
 }
-@media (min-width: (min-width: 1200px)) {
+@media (min-width: 1200px) {
   .show-hd {
     display: block !important;
   }
@@ -2131,22 +2131,22 @@
     display: table-cell !important;
   }
 }
-@media (max-width: (min-width: 768px)) {
+@media (max-width: 768px) {
   .hide-mb {
     display: none !important;
   }
 }
-@media (min-width: (min-width: 768px)) and (max-width: (min-width: 992px)) {
+@media (min-width: 768px) and (max-width: 992px) {
   .hide-tb {
     display: none !important;
   }
 }
-@media (min-width: (min-width: 992px)) and (max-width: (min-width: 1200px)) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .hide-dt {
     display: none !important;
   }
 }
-@media (min-width: (min-width: 1200px)) {
+@media (min-width: 1200px) {
   .hide-hd {
     display: none !important;
   }

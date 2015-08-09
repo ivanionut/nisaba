@@ -1,8 +1,8 @@
 // Break-points
 
-@screenTablet: 				~"(min-width: 768px)";
-@screenDesktop: 			~"(min-width: 992px)";
-@screenDesktopHD:  	  ~"(min-width: 1200px)";
+@screenTablet:        768px;
+@screenDesktop:       992px;
+@screenDesktopHD:    1200px;
 
 /*
 
@@ -41,19 +41,19 @@
 .generaSpazi(padding, 20, 5, mb);
 
 // Tablet
-@media @screenTablet {
+@media (min-width: @screenTablet) {
 	.generaSpazi(margin, 20, 5, tb);
 	.generaSpazi(padding, 20, 5, tb);
 }
 
 // Desktop
-@media @screenDesktop {
+@media (min-width: @screenDesktop) {
 	.generaSpazi(margin, 20, 5, dt);
 	.generaSpazi(padding, 20, 5, dt);
 }
 
 // DesktopHD
-@media @screenDesktopHD {
+@media (min-width: @screenDesktopHD) {
 	.generaSpazi(margin, 20, 5, hd);
 	.generaSpazi(padding, 20, 5, hd);
 }
