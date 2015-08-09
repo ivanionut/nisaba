@@ -2056,6 +2056,15 @@
   }
 }
 /* Show & Hide */
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
 .show-mb,
 .show-tb,
 .show-dt,
