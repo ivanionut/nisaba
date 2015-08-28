@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*!
- *    nisaba Grid System 1.5
+ *    nisaba Grid System 1.5.1
  *
  *    Creator: Ivan Ionut
  *    Site: http://www.nisaba.it
- *    Date: 09.08.2015
+ *    Date: 28.08.2015
  */
 /*
 	Configurazioni
@@ -48,14 +48,11 @@
   margin-right: -18px;
   margin-left: -18px;
   padding: 0 36px;
-  zoom: 1;
 }
 .row:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  content: ".";
 }
 .row .row {
   padding: 0;
@@ -768,13 +765,8 @@
 .text-center {
   text-align: center;
 }
-.clear {
-  zoom: 1;
-}
 .clear:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  content: ".";
 }

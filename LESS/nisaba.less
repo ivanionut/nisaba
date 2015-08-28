@@ -1,9 +1,9 @@
 /*!
- *    nisaba Grid System 1.5
+ *    nisaba Grid System 1.5.1
  *
  *    Creator: Ivan Ionut
  *    Site: http://www.nisaba.it
- *    Date: 09.08.2015
+ *    Date: 28.08.2015
  */
 
 
@@ -403,12 +403,9 @@
 // Clearfix
 
 .clear {
-	zoom: 1;
 	&:after {
-    	display: block;
-			visibility: hidden;
-    	height: 0;
-    	clear: both;
-    	content: ".";
+		content: "";
+		display: table;
+		clear: both;
 	}
 }
